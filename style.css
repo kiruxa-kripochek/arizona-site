@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.arizona-logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: black;
+}
+.arizona-desc {
+    margin-left: 20px;
+    margin-top: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 32px;
+    margin-right: 10px;
+    color: #fff;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.nav-links {
+    margin-top: 15px;
+    background-color: #757575;
+    opacity: 3;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    border-radius: 20px;
+    position: absolute;
+    border-right: 2px solid grey;
+    
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    filter: brightness(100%);
+    filter: opacity(2);
+  }
+  
+
+
+
+.arizona-desc:hover {
+    color: black;
+    transition: 0,2ms;
+}
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  z-index: 1;
+}
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 55px;
+    font-weight: 600;
+}
+.title-desc{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 22px;
+}
+.img-title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 55px;
+    font-weight: 600;
+    z-index: 1;
+    color: #fff;
+}
+.img-game{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+  z-index: 1;
+}
+.cards-boxes {
+  margin-top: 35%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.card-1-box {
+  margin: 10px;
+  z-index: 1;
+}
+.card-2-box {
+  margin: 10px;
+  z-index: 1;
+}
+.card-3-box {
+  margin: 10px;
+  z-index: 1;
+}
+.man-watching-card1 {
+  width: 300px;
+  height: 190px;
+  left: 10px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 15px;
+}
+
+.man-watching-card2 {
+  width: 300px;
+  height: 190px;
+  left: 10px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 15px;
+}
+.man-watching-card3 {
+  width: 300px;
+  height: 190px;
+  left: 10px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 15px;
+}
+.card-1-desc {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+.card-2-desc {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+.card-3-desc {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
