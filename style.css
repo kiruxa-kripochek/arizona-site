@@ -1,4 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rammetto+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 .arizona-logo {
     width: 40px;
@@ -25,7 +29,27 @@ header {
     color: #fff;
     margin-bottom: 15px;
     cursor: pointer;
+    text-decoration: none;
+    padding-bottom: 1px; /* Уменьшил отступ снизу для более точного отображения */
+    position: relative;
 }
+
+.arizona-desc::after {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Изменение высоты для более заметного подчеркивания */
+  background-color: white;
+  transition: height 0.3s;
+  transform: scaleY(0);
+}
+
+.arizona-desc:hover::after {
+  transform: scaleY(1); 
+}
+
 .nav-links {
     margin-top: 15px;
     background-color: #757575;
@@ -36,30 +60,45 @@ header {
     border-radius: 20px;
     position: absolute;
     border-right: 2px solid grey;
-    
+    position: fixed;
 }
+
+
+
+
 .nav {
     display: flex;
     justify-content: center;
     color: black;
 }
 .background-video {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
+    max-width: 100vh;
+    max-height: 100vh;
     min-width: 100%;
     min-height: 100%;
-    object-fit: cover;
-    filter: brightness(100%);
-    filter: opacity(2);
+    object-fit: inherit;
+    filter: brightness(50%);
+    z-index: 1;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
   }
   
-
+main {
+  background: rgba(0, 0, 0, 0.5);
+}
 
 
 .arizona-desc:hover {
     color: black;
-    transition: 0,2ms;
+    transition: 1s;
 }
 .content {
   position: absolute;
@@ -69,11 +108,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0,5);
 }
 .title {
     font-family: "Montserrat", sans-serif;
@@ -85,9 +124,9 @@ header {
     font-weight: 600;
 }
 .title-desc{
-    font-family: "Montserrat", sans-serif;
+   font-family: "Bungee Spice", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 600;
     font-style: normal;
     text-decoration: none;
     font-size: 22px;
@@ -181,4 +220,68 @@ header {
   font-weight: 400;
   font-style: normal;
   color: #fff;
+}
+.imho-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: #fff;
+}
+.imho {
+  top: 0;
+  bottom: 0;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.opinion {
+    font-family: "Rammetto One", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 22px;
+    color: #C7FCEC;
+}
+.main-content {
+  background: rgba(0, 0, 0, 0,5);
+  color: #f1f1f1;
+  top: 0;
+  margin-top: 25px;
+}
+.footer {
+  background-color: black;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  min-width: 100vh;
+  max-height: 100vh;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  color: purple;
+}
+.created {
+ color: #Fff;
+}
+.created-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
